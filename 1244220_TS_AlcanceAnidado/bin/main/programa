@@ -1,0 +1,12 @@
+int i=9;
+float f(int x, float y) {
+	float i;
+	{float z = x+y; i=z;}
+	{float z = i+1; i=z;}
+	return i;
+}
+
+void g(){
+	f(i,2);
+}
+
